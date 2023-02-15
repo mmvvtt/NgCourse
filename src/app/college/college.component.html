@@ -1,0 +1,49 @@
+<!-- One way databiding -->
+
+<strong style = "color: red;"> 1-Way DataBinding</strong>
+<br>
+
+
+Server Name is: {{serverName}}
+<!-- <br>
+College Name is: {{collegeName}}
+ -->
+
+ <hr>
+ <!-- Property Biding -->
+
+ <strong style="color: red;">Property Biding: </strong>
+ <br>
+ <button class="btn btn-warning" [disabled]="flag">Submit</button>
+
+ <hr>
+ <!-- Event Binding -->
+
+ <strong style="color: red;"> Event Binding </strong>
+
+ <button type="submit"(click)="onClick()">Click Me!</button>
+
+ <hr>
+ <!-- 2 Way DataBinding-->
+
+ <!--[(ngModel)]-->
+
+ Enter Name: <input type="text" [(ngModel)]="empname">
+
+ <br>
+
+ Enter name is: {{empname}}
+
+ <br>
+<!-- Exercise -->
+
+Username: <input type="text" [(ngModel)]="username">
+<br>
+Password: <input type="text" [(ngModel)] = "password">
+
+<br> 
+
+<button type="submit" (click)="onLogin()">Login</button>
+<!-- <span>Entered username is: {{username}} and the password is: {{password}}</span> -->
+
+<button type="submit" (click)="onClear()">Clear</button>
